@@ -1,0 +1,64 @@
+/* Home.css */
+
+.game-container {
+
+  margin: 0 auto;
+  padding: 20px;
+  gap: 1.5rem;
+
+}
+
+
+
+.game-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 39%;
+  padding: 16px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-card-container:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.game-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+  text-align: center;
+}
+
+.game-image {
+  width: 90px;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: transform 0.4s ease; /* add transition */
+}
+
+/* 👇 Image animation on card hover */
+.game-card-container:hover .game-image {
+  transform: scale(1.2) rotate(180deg);
+  box-shadow: 0 0 15px rgba(0, 128, 255, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: pulse 0.6s ease-in-out;
+}
+
+.game-description {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
