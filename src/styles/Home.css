@@ -1,11 +1,9 @@
 /* Home.css */
 
 .game-container {
-
-  margin: 0 auto;
-  padding: 20px;
-  gap: 1.5rem;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 

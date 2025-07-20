@@ -1,5 +1,6 @@
 import GameCards from "../components/GameCards";
 import memorygamepic from "../assets/memory-game.png";
+import tictacgamepic from "../assets/tic-tac-toe.png";
 import "../styles/Home.css";
 
 const games = [
@@ -8,6 +9,12 @@ const games = [
     imgsrc: memorygamepic,
     description: "Flip and match emoji tiles!",
     id: "emoji-memory-game"
+  },
+  {
+    title: "Tic Tac Toe Game",
+    imgsrc: tictacgamepic,
+    description: "Tic Tac Toe Game!",
+    id: "tic-tac-toe-game"
   }
 ];
 
