@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/EmojiGame.css";
+import { useNavigate } from 'react-router-dom';
 
 type emoji = {
   id: number,
@@ -35,7 +36,7 @@ export default function EmojiMemoryGame() {
     { id: 15, emoji: "🎉", isMatched: false, isFlipped: false },
     { id: 16, emoji: "🧠", isMatched: false, isFlipped: false },
   ]));
-
+  const navigate = useNavigate();
   const [selectedEmojis, setSelectedEmojis] = useState<emoji[]>([]);
 
   const handleOnGridItemClick = (clickedEmoji: emoji) => {
@@ -85,7 +86,9 @@ export default function EmojiMemoryGame() {
 
   return (
     <div className='emoji-container'>
-      <button className='go-back-button' onClick={() => window.location.href = '/' }>Go Back</button>
+      <button className='go-back-button' onClick={() => {
+        navigate(-1)
+      }}>Go Back</button>
       <h1>Emoji Memory Game</h1>
       {isGameWon && <h2 className="win-message">🎉 You Won! 🎉</h2>}
       <div className='grid-container'>
