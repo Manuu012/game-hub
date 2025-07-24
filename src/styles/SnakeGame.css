@@ -1,0 +1,103 @@
+.snake-game-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #f9f9f9, #e2f0e4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.score-board {
+  width: 100%;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 1rem;
+}
+
+.control-btn {
+  background-color: #fff;
+  border: 2px solid #666;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.control-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+.restart-btn {
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
+  transition: all 0.3s ease;
+  margin-bottom: 2%;
+  padding: 12px;
+}
+
+.reset-img{
+  width:20px;
+  height:20px;
+}
+
+
+
+.snake-board {
+  display: grid;
+  grid-template-columns: repeat(11, 37px);
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid  black;
+  width:fit-content;
+}
+
+.snake-cell {
+  width: 37px;
+  height: 37px;
+  border: 1px solid lightslategray;
+}
+
+.snake-body {
+  background-color: #00bfa5;
+  box-shadow: 0 0 5px 1px #00bfa5;
+  border-radius:  30% ;
+}
+
+/* Snake Head */
+.snake-head {
+  background-color: #1de9b6;
+  border-radius:  40% ;
+}
+
+.food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
